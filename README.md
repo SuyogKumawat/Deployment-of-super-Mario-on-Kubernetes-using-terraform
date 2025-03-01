@@ -1,4 +1,4 @@
-Super Mario Game hosted on top of EKS
+**Super Mario Game hosted on top of EKS**
 
 Step1: Launch EC2 instance with t2.micro, ubuntu as AMI, allow rule for https and http of security group.
 Step2: Create role with admin priviledges. Note - It is used by your ec2 instance to create EKS cluster and manage s3 bucket by applying this IAM role it gives the authenticity to your ec2 to do changes in aws account
