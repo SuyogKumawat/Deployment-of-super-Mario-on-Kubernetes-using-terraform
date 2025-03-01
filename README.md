@@ -1,7 +1,9 @@
 **Super Mario Game hosted on top of EKS**
 
 Step1: Launch EC2 instance with t2.micro, ubuntu as AMI, allow rule for https and http of security group.
+
 Step2: Create role with admin priviledges. Note - It is used by your ec2 instance to create EKS cluster and manage s3 bucket by applying this IAM role it gives the authenticity to your ec2 to do changes in aws account
+
 Step3. Create S3 bucket for later use to store state file
 
 Step4. Install Docker
@@ -20,6 +22,7 @@ gpg --dearmor | \
 sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg > /dev/null
 
 #Verify the key's fingerprint.
+
 gpg --no-default-keyring \
 --keyring /usr/share/keyrings/hashicorp-archive-keyring.gpg \
 --fingerprint
@@ -42,6 +45,7 @@ curl -LO https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
 #verification
+
 which aws
 which kubectl
 
