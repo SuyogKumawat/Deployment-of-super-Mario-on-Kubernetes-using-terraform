@@ -46,9 +46,13 @@ which aws
 which kubectl
 
 Step8. mkdir super-mario
+
 Step9. cd super-mario
+
 Step10. git clone this branch
-Step11. cd Deployment-of-super-Mario-on-Kubernetes-using-terraform/
+
+Step11. cd Super-Mario-EKS/
+
 Step12. cd EKS-TF
 
 Note: Make sure to provide your bucket and region name in this file otherwise it doesn’t work and IAM role is also associated with your ec2 which helps ec2 to use other services such S3 bucket
